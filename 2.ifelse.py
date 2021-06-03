@@ -72,4 +72,25 @@ elif v == "W":
 else:
     res = "не понятный мне символ :("
 
-print(res)
+# print(res)
+
+
+# *** пример, "Термостат" ***
+
+# текущая температура помещения
+current_temp = 25
+
+# заданное значение диапазона температур
+min_temp = 10
+max_temp = 25
+
+# параметр люди "есть/нет"
+h = True
+
+# логика термостата
+if current_temp < min_temp and not h:
+    print("включен нагрев до {min_temp}")
+elif current_temp < max_temp and h:
+    print("включен нагрев до {max_temp}")
+else:
+    print("нагрев выключен")
